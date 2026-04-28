@@ -8,8 +8,8 @@ import { Footer } from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "BuildMate | Premium B2B Construction Marketplace",
-  description: "The frictionless B2B marketplace for construction materials and heavy machinery.",
+  title: "SS Constructions & Traders | Premium B2B Construction Marketplace",
+  description: "The frictionless B2B marketplace for construction materials and heavy machinery. Serving contractors pan-India from Asansol, West Bengal.",
 };
 
 export default function RootLayout({

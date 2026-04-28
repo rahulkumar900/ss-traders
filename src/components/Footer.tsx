@@ -54,7 +54,7 @@ export function Footer() {
         </div>
         
         <div className="pt-8 border-t border-gray-800 text-gray-500 font-medium text-sm flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>&copy; {new Date().getFullYear()} BuildMate. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} SS Constructions & Traders. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-white transition-colors">Terms</Link>
             <Link href="#" className="hover:text-white transition-colors">Privacy</Link>
