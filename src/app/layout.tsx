@@ -10,14 +10,14 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata: Metadata = {
   metadataBase: new URL("https://ssconstructionsandtraders.com"),
   title: {
-    default: "SS Constructions & Traders | Premium B2B Construction Marketplace",
-    template: "%s | SS Constructions & Traders",
+    default: "S S Constructions & Traders | Direct B2B Construction Material Supply",
+    template: "%s | S S Constructions & Traders",
   },
-  description: "The frictionless B2B marketplace for construction materials and heavy machinery. Serving contractors pan-India from Asansol, West Bengal.",
-  keywords: ["construction materials", "heavy machinery rental", "B2B marketplace", "Asansol contractors", "civil contracting", "industrial supply", "TMT bars", "premium cement", "SS Constructions", "Anand Kumar Dubey"],
+  description: "India's premier B2B marketplace for construction materials & heavy machinery. Sourcing TMT steel, cement, sand, and aggregates directly from manufacturers to your site.",
+  keywords: ["construction materials India", "B2B construction marketplace", "TMT steel bar suppliers", "wholesale cement supply", "sand and aggregate delivery", "heavy machinery rental", "Asansol construction company", "Anand Kumar Dubey", "industrial building materials"],
   authors: [{ name: "Anand Kumar Dubey" }],
-  creator: "SS Constructions & Traders",
-  publisher: "SS Constructions & Traders",
+  creator: "S S Constructions & Traders",
+  publisher: "S S Constructions & Traders",
   robots: {
     index: true,
     follow: true,
@@ -33,14 +33,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://ssconstructionsandtraders.com",
-    title: "SS Constructions & Traders | Premium B2B Construction Marketplace",
-    description: "The frictionless B2B marketplace for construction materials and heavy machinery. Delivering industrial excellence across India.",
-    siteName: "SS Constructions & Traders",
+    title: "S S Constructions & Traders | Direct B2B Construction Material Supply",
+    description: "Sourcing premium TMT steel, cement, sand, and aggregates directly from manufacturers to your construction site. Reliable B2B supply chain across India.",
+    siteName: "S S Constructions & Traders",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        alt: "S S Constructions & Traders Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SS Constructions & Traders",
-    description: "The frictionless B2B marketplace for construction materials and heavy machinery.",
+    title: "S S Constructions & Traders",
+    description: "Premium B2B marketplace for construction materials and heavy machinery rental.",
+    images: ["/twitter-image.png"],
   },
 };
 
