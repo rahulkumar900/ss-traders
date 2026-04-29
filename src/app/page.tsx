@@ -8,13 +8,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { motion, AnimatePresence } from "framer-motion";
 import { InteractiveBackground } from "@/components/InteractiveBackground";
 
-// Mock Data
-const PRODUCTS = [
-  { id: 1, category: 'Aggregates', name: 'Premium River Sand', price: 65, unit: 'cft', image: 'https://images.unsplash.com/photo-1574766863076-2358fb944fc7?auto=format&fit=crop&q=80&w=1000', seoDesc: 'Double-washed coarse river sand...', features: ['High Strength', 'Silt-Free'] },
-  { id: 2, category: 'Wood', name: 'Marine Plywood 18mm', price: 110, unit: 'sqft', image: 'https://images.unsplash.com/photo-1543362145-2d44fc3ab70a?auto=format&fit=crop&q=80&w=1000', seoDesc: 'IS:710 certified marine plywood...', features: ['Waterproof', 'Termite Resistant'] },
-  { id: 3, category: 'Cement', name: 'PPC Cement (50kg)', price: 380, unit: 'bag', image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=1000', seoDesc: 'Portland Pozzolana Cement...', features: ['High Strength', 'Sulfate Resistant'] },
-  { id: 4, category: 'Steel', name: 'TMT Steel Bars (12mm)', price: 62000, unit: 'ton', image: 'https://images.unsplash.com/photo-1536880590393-27e1ce7ab6da?auto=format&fit=crop&q=80&w=1000', seoDesc: 'Fe500D Grade TMT bars...', features: ['Earthquake Resistant'] }
-];
+import { INVENTORY as PRODUCTS } from "@/data/inventory";
 
 const FAQS = [
   { question: "How does the pricing work?", answer: "Prices are highly dynamic based on your selected region and current market rates. When you click 'Inquire on WhatsApp', our system prepares a message so our sales team can immediately give you the final, negotiated landed cost." },
@@ -30,9 +24,9 @@ export default function Home() {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      router.push(`/materials?q=${encodeURIComponent(searchQuery.trim())}`);
+      router.push(`/products?q=${encodeURIComponent(searchQuery.trim())}`);
     } else {
-      router.push(`/materials`);
+      router.push(`/products`);
     }
   };
 
@@ -213,7 +207,7 @@ export default function Home() {
             className="flex items-end justify-between mb-16"
           >
             <h2 className="text-5xl md:text-7xl font-black tracking-tighter">Top <br/>Materials.</h2>
-            <Link href="/materials" className="hidden md:flex items-center gap-2 text-xl font-bold hover:text-gray-500 transition-colors">
+            <Link href="/products" className="hidden md:flex items-center gap-2 text-xl font-bold hover:text-gray-500 transition-colors">
               View Catalog <ArrowRight />
             </Link>
           </motion.div>
@@ -233,7 +227,7 @@ export default function Home() {
           </div>
           
           <div className="mt-12 md:hidden">
-            <Link href="/materials" className="block text-center bg-gray-50 rounded-2xl py-6 font-bold text-xl hover:bg-gray-100">
+            <Link href="/products" className="block text-center bg-gray-50 rounded-2xl py-6 font-bold text-xl hover:bg-gray-100">
               View Full Catalog
             </Link>
           </div>

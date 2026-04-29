@@ -69,7 +69,7 @@ export const INVENTORY: Product[] = [
     name: "Marine Plywood 18mm",
     price: 110,
     unit: "sqft",
-    image: "/products/door.jpg",
+    image: "/products/plywood.jpg",
     description: "Elegant and sturdy wooden solutions for interiors.",
     seoDesc: "IS:710 certified marine plywood for durable interior work.",
     features: ["Waterproof", "Termite Resistant"],
