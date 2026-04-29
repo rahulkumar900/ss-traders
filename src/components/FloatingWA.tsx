@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export const FloatingWA = () => {
   const handleWA = () => {
-    window.open("https://wa.me/917677178930?text=Hi%20SS%20Constructions,%20I'm%20interested%20in%20your%20All-India%20services.", "_blank");
+    window.open("https://wa.me/918617484725?text=Hi%20SS%20Constructions,%20I'm%20interested%20in%20your%20All-India%20services.", "_blank");
   };
 
   return (

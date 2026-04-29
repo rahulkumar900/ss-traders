@@ -326,7 +326,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-lg font-bold text-gray-500 mb-1">Direct Line</h4>
-                      <p className="text-2xl font-bold">+91 7677178930</p>
+                      <p className="text-2xl font-bold">+91 9801282874</p>
                     </div>
                   </div>
                   
@@ -336,7 +336,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-lg font-bold text-gray-500 mb-1">Email</h4>
-                      <p className="text-2xl font-bold">contact@ssconstructions.in</p>
+                      <p className="text-2xl font-bold">dubey.anandkumar193@gmail.com</p>
                     </div>
                   </div>
                   
@@ -346,7 +346,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="text-lg font-bold text-gray-500 mb-1">Headquarters</h4>
-                      <p className="text-xl font-bold max-w-xs">Holding No :- 00, Ground Floor, Ward No 56 Hirapur, Asansol, 713326</p>
+                      <p className="text-xl font-bold max-w-xs">Ground floor, Holding No 10/10, Ward no 56, Anand nagar, Asansol, Paschim Bardhaman, West Bengal, Pin-713325</p>
                     </div>
                   </div>
                 </div>

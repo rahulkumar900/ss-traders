@@ -6,17 +6,10 @@ import { useLocation } from "./LocationProvider";
 import { MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
 
+import { Product } from "@/data/inventory";
+
 interface ProductCardProps {
-  product: {
-    id: number;
-    category: string;
-    name: string;
-    price: number | string;
-    unit: string;
-    image: string;
-    seoDesc: string;
-    features: string[];
-  };
+  product: Product;
 }
 
 export function ProductCard({ product }: ProductCardProps) {

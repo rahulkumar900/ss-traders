@@ -17,8 +17,10 @@ import { Button } from "./ui/button";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
-  { href: "/materials", label: "Materials" },
+  { href: "/products", label: "Products" },
   { href: "/services", label: "Services" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function Navbar() {

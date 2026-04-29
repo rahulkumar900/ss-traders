@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { categories } from "@/data/products";
+import { categories } from "@/data/inventory";
 import { Card } from "@/components/ui/card";
 import { Hammer, Droplets, ShieldCheck, Grid3X3, Trees, Users } from "lucide-react";
 
