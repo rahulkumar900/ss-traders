@@ -3,13 +3,14 @@
 import React from "react";
 import { Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLocation } from "./LocationProvider";
+import { openWhatsApp } from "@/lib/whatsapp";
 
 export const FloatingWA = () => {
+  const { location } = useLocation();
+  
   const handleWA = () => {
-    window.open(
-      "https://wa.me/918617484725?text=Hi%20SS%20Constructions,%20I'm%20interested%20in%20your%20All-India%20services.",
-      "_blank",
-    );
+    openWhatsApp("All Services", location);
   };
 
   return (

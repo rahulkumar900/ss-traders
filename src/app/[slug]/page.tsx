@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Smartphone, Truck, ShieldCheck, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 import { ProductCard } from "@/components/ProductCard";
+import { CONTACT_CONFIG } from "@/lib/whatsapp";
 
 // Generate Static Params for all combinations
 export async function generateStaticParams() {
@@ -109,12 +110,10 @@ export default async function ProductLocationPage({
     notFound();
   }
 
-  const WHATSAPP_NUMBER = "+919801282874";
-  const whatsappMessage = encodeURIComponent(
-    `Hi SS Constructions & Traders, I am looking to buy ${item.name} in ${city}. Please provide the latest quotation and delivery details.`
-  );
+  const whatsappMessage = encodeURIComponent(CONTACT_CONFIG.whatsappMessage(item.name, city));
 
   return (
+
     <main className="min-h-screen bg-white">
       {/* Schema.org JSON-LD for SEO */}
       <script
@@ -158,7 +157,7 @@ export default async function ProductLocationPage({
 
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`}
+              href={`https://wa.me/${CONTACT_CONFIG.phone}?text=${whatsappMessage}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] hover:bg-black text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-3 transition-colors shadow-lg"
